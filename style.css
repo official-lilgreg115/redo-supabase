@@ -1,0 +1,219 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    /* border: 0.5px solid red; */
+    padding: 0% ;
+    margin: 0%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid white;
+    height: 50px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 0.5px solid white; */
+}
+a{
+    text-decoration: none;
+}
+.container-for-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: fit-content;
+    /* border: 0.5px solid white; */
+    margin-left: 5%;
+}
+.container-for-header-img{
+    height: 2em;
+    width: 2em;
+}
+.container-for-header-h1{
+    color: white;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-button-header{
+    display: block;
+    height: 1.6em;
+    margin-left: auto;
+    margin-right: 6%;
+}
+.container-for-header-h2-div{
+    display: none;
+}
+.hidden-small{
+    display: none;
+}
+.section-one{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100;
+    /* border: 0.5px solid white; */
+}
+.para-one-section-one{
+    color: rgb(234, 236, 234);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.para-one-section-one>span{
+    color: #00c16a;
+}
+.para-two-section-one{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.25em;
+    margin-top: -3%;
+}
+.buttons-div-section-one{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 2.5em;
+    width: 100%;
+    margin-top: 3%;
+    /* border: 0.5px solid white; */
+}
+.button-section-one-green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(16, 82, 16);
+    border: 0.5px solid white;
+    border-radius: 6px;
+
+}
+.button-section-one-black{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(36, 37, 36);
+    border: 0.5px solid white;
+    border-radius: 6px;
+}
+.button-section-one-text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+}
+
+@media screen and (min-width:1024px) {
+    .menu-button-header{
+        display:none;
+        
+    }
+    .header{
+        gap: 35px;
+    }
+    .container-for-header-h1{
+        font-size: 1em;
+    }
+    .container-for-header-img{
+        height: 1em;
+        width: 1em;
+    }
+    .container-for-header-h2{
+        display: block;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85em;
+        flex-grow: 1;
+    }
+    .container-for-header-h2-div{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        /* border: 0.5px solid white; */
+    }
+    .div-for-product,.div-for-developers{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        /* border: 0.5px solid white; */
+        margin-right: 5%;
+    }
+    .div-for-product >img,.div-for-developers>img{
+        height: 1em;
+        width: 1em;
+    }
+    .div-for-header-buttons{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+        /* border: 0.5px solid white; */
+    }
+    .div-for-git-logo{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        width: 20%;
+        height: 70%;
+        /* border: 0.5px solid white; */
+    }
+    .div-for-git-logo > img{
+        height: 1em;
+        width: 1em;
+    }
+    .div-for-git-logo > span{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85em;
+        opacity: 0.5;
+    }
+    .black-button-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        height: 40%;
+    }
+    .green-button-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        border: 0.5px solid white;
+        border-radius: 4px;
+        height: 40%;
+        margin-left: 3%;
+        background-color: rgb(69, 110, 69);
+    }
+    .black-button-header>h5,.green-button-header>h5{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.65em;
+    }
+    .para-one-section-one{
+        font-size: 4.5em;
+        margin-top: 13%;
+    }
+    .para-two-section-one{
+        flex-wrap: wrap;
+        font-size: 1.1em;
+        text-align: center;
+       
+    }
+    .buttons-div-section-one>a{
+        width: 15%;
+    }
+    .buttons-div-section-one{
+        height: 3.4em;
+    }
+}

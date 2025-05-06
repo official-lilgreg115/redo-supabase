@@ -31,7 +31,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    border-bottom: 0.5px solid white;
+    border-bottom:var(--main-b);
     height: 50px;
     position: fixed;
     width: 100%;
@@ -121,8 +121,8 @@ a{
     height: 100%;
     width: 30%;
     background-color: rgb(16, 82, 16);
-    border: 0.5px solid white;
-    border-radius: 6px;
+    border: var(--main-b);
+    border-radius: 8px;
 
 }
 .button-section-one-black{
@@ -132,8 +132,8 @@ a{
     height: 100%;
     width: 30%;
     background-color: rgb(36, 37, 36);
-    border: 0.5px solid white;
-    border-radius: 6px;
+    border: var(--main-b);
+    border-radius: 8px;
 }
 .button-section-one-text{
     color: white;
@@ -278,19 +278,19 @@ a{
 }
 .section-six{
     display: flex;
+    align-items: center;
     gap: 10px;
     overflow-x: auto;
     overflow-y: hidden;
-    height: 15em;
+    height: fit-content;
     width: 100%;
     /* border: var(--try-b); */
-    margin-top: 50%;
+    margin-top: 44%;
 }
 .div-inside-section-six{
     gap: 7px;
-    height: 100%;
+    height: 17em;
     width: 15em;
-    
     flex-shrink: 0;
 }
 .child-divs{
@@ -303,7 +303,66 @@ a{
     border: var(--main-b);
     border-radius: 8px;
 }
-@media  screen and (min-width:786px) {
+.child-divs-text{
+    color: gray;
+    font-size: 1.4em;
+}
+.child-divs>img{
+    height: 2em;
+    opacity: 0.7;
+}
+.next-door{
+    text-align: center;
+    line-height: 0.7em;
+}
+.next-door>span{
+    font-size: 0.4em;
+    letter-spacing: 10px;
+    
+}
+.section-seven{
+    align-items: center;
+    height: 12em;
+    width: 100%;
+    /* border: var(--try-b); */
+    margin-top: 30%;
+    /* padding-left: 20%; */
+    
+    
+}
+.first-text-section-seven{
+    font-size: 1.7em;
+}
+.Second-text-section-seven{
+    color: gray;
+    text-align: center;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: -3%;
+
+}
+.buttons-div-section-seven{
+    gap: 10px;
+    height: fit-content;
+    width: 100%;
+    /* border: var(--try-b); */
+    margin-top: 2%;
+}
+.buttons-section-seven{
+    gap: 5px;
+    height: 2.3em;
+    width: 37%;
+    border: var(--main-b);
+    border-radius: 8px;
+}
+.buttons-section-seven{
+    font-size: 1em;
+}
+.buttons-section-seven>img{
+    height: 1em;
+    opacity: 0.8;
+}
+@media  screen and (min-width:768px) {
     .section-four-imgs{
         grid-template-columns: repeat(10,9fr);
     }
@@ -311,7 +370,26 @@ a{
         font-size: 2.4em;
         line-height: 1em;
     }
-    
+    .section-six{
+        margin-top: 15% ;
+    }
+    .buttons-div-section-seven{
+        margin-top: 0%;
+    }
+    .buttons-section-seven{
+        height: 2em;
+        width: 20%;
+    }
+    .buttons-section-seven{
+        font-size: 1em;
+    }
+    .first-text-section-seven{
+        font-size: 2.2em;
+    }
+    .Second-text-section-seven{
+        font-size: 1.1em;
+        margin-top: -1%;
+    }
 }
 @media screen and (min-width:1024px) {
     .menu-button-header{
@@ -429,6 +507,10 @@ a{
     .section-four-imgs{
         margin-top: 3%;
     }
+    .section-six{
+        margin-top: 10% ;
+    }
+    
 }
 @media screen and (min-width:1280px) {
     .section-four{
@@ -483,6 +565,9 @@ a{
 }
 .section-five{
     margin-top: 7%;
+}
+.section-six{
+    margin-top: 15% ;
 }
 }
 

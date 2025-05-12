@@ -14,6 +14,7 @@
 .main-text{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 .center-flex{
     display: flex;
@@ -689,7 +690,170 @@ a{
 }
 .video-div{
     width: 100%;
-    height: 30em;
+    height: 20em;
+}
+.comments{
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    /* border: var(--try-b); */
+    margin-top: 10%;
+}
+.comments-div{
+    flex-shrink: 0;
+    width: 80%;
+    height: fit-content;
+    border: var(--main-b);
+    padding: 3%;
+    border-radius: 10px;
+}
+.comments-profile{
+    height: 4em;
+    /* border: var(--try-b); */
+    display: flex;
+    align-items: center;
+}
+.comments-profile>img{
+    height: 3em;
+}
+.Pricing-section-one{
+    width: 100%;
+    height: fit-content;
+    /* border: var(--try-b); */
+    overflow: hidden;
+    margin-top: 10%;
+}
+.Pricing-section-one-text-one{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Pricing-section-one-text-two{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: grey;
+    font-size: 1.2em;
+    margin-top: -15px;
+}
+.Pricing-section-two{
+    /* border: var(--try-b); */
+    width: 90%;
+    height: fit-content;
+    margin-top: 5%;
+    align-self: center;
+    gap: 15px;
+}
+.space-pricing{
+    height: 1em;
+}
+.Pricing-divs-section-one{
+    width: 87%;
+    height: 35em;
+    border: var(--main-b);
+    border-radius: 10px;
+    padding: 5%;
+    
+}
+.Pricing-divs-section-one-header{
+    font-size: 1.1em;
+    margin-top: auto;
+}
+.Pricing-divs-section-one-description{
+    color: grey;
+    font-size: 0.9em;
+    margin-top: -1%;
+}
+.Pricing-divs-section-one-button{
+    width: 80%;
+    align-self: center;
+    border: var(--main-b);
+    height: 2.5em;
+    background-color: rgb(4, 97, 4);
+    border-radius: 7px;
+}
+.amounts-section-two{
+    display: flex;
+    align-items: baseline;
+    width: fit-content;
+    height: fit-content;
+    /* border: var(--try-b); */
+}
+.amounts-section-two-big-text{
+    font-size: 48px;
+    font-family: monospace;
+    color: white;
+}
+.amounts-section-two-small-text{
+    font-size: 13px;
+}
+.benefits-pricing{
+    color: grey;
+    font-size: 13px;
+}
+.benefits{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    width: fit-content;
+    height: 2.2em;
+    /* border: var(--try-b); */
+}
+.benefits-text{
+    font-size: 13px;  
+}
+.benefits-text>span{
+    color: grey;
+    font-size: 11px;
+}
+.benefits>img{
+    height: 20px;
+}
+.last-text-pricing{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: grey;
+}
+.enterprise-margin{
+    margin-top: 0%;
+}
+.hidden-no-big{
+        display: none;
+}
+.black-price-button{
+    background-color: #3c3d3d;
+}
+.Pricing-section-three{
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+    gap: 10px;
+}
+.Pricing-section-three-button-one{
+    width: 27%;
+    height: 1.5em;
+    background-color: white;
+    border: var(--main-b);
+    border-radius: 6px;
+}
+.Pricing-section-three-button-two{
+    width: 37%;
+    height: 1.5em;
+    background-color: rgb(73, 72, 72);
+    border: var(--main-b);
+    border-radius: 6px;
+}
+.Pricing-section-three-button-one>p{
+    color: black;
+    font-size: 12px;
+}
+.Pricing-section-three-button-two>p{
+    font-size: 12px;
+}
+.Pricing-section-three-button-one>img,.Pricing-section-three-button-two>img{
+    height: 1em;
 }
 @media  screen and (min-width:768px) {
     .section-four-imgs{
@@ -899,9 +1063,45 @@ a{
     .sub-div-section-three>p{
         text-align: center;
     }
+    .comments-div{
+        width: 40%;
+    }
+    .video-div{
+        margin-top: 4%;
+    width: 100%;
+    height: 30em;
+}
+.Pricing-section-one-text-one{
+    font-size: 2.5em;
+}
+.Pricing-section-one-text-two{
+    font-size: 1.3em;
+}
+.Pricing-section-two{
+    width: 60%;
+}
+ .hidden-no-big{
+        display: none;
+}
+.Pricing-section-three{
+    width: 70%;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.Pricing-section-three-button-one{
+    width: 20%;
+}
+.Pricing-section-three-button-two{
+    width: 30%;
+}
 }
 
 @media screen and (min-width:1024px) {
+    .hidden-laptop{
+        display: none;
+    }
     .menu-button-header{
         display:none;
     }
@@ -1067,6 +1267,24 @@ a{
     .order-third{
         margin-left: 3%;
     }
+    .Pricing-section-two{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        gap: 13pxpx;
+    }
+    .Pricing-divs-section-one{
+        width: 90%;
+    }
+    .hidden-no-big{
+        display: none;
+    }
+    .Pricing-section-three-button-one{
+    width: 15%;
+}
+.Pricing-section-three-button-two{
+    width: 22%;
+}
 
 }
 @media screen and (min-width:1280px) {
@@ -1082,8 +1300,7 @@ a{
         gap: 2px;
         width: 60%;
         margin-left: auto;
-        margin-bottom: 2%;
-        
+        margin-bottom: 2%;   
     }
     .text-in-section-four{
         text-align: left;
@@ -1147,11 +1364,32 @@ a{
     grid-template-columns: repeat(4,3fr);
     grid-template-rows: repeat(3,2fr);
     gap: 0;
- 
-
+}
+.Pricing-section-two{
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: visible;
+    white-space: nowrap;
+    /* border: var(--try-b); */
+    width: 90%;
+   
+}
+.Pricing-divs-section-one{
+    width: 14.8%;
+    padding-left: 1%;
+    flex-grow: 1;
+   
+}
+ .hidden-no-big{
+        display: block;
+}
+.pro-pricing-div{
+    margin-top: -3%;
+    height: 39em;
     
 }
-
 }
 
 

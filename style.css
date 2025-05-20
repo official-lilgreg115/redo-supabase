@@ -1226,14 +1226,20 @@ tr{
 }
 .custom-domain-main{
     margin-top: 5%;
+    
 }
 .custom-domain{
     width: 100%;
     justify-content: center;
-    height: fit-content;
+    height: 7em;
     border: var(--main-b);
     border-radius: 8px;
     padding: 6px;
+}
+.container-transform{
+    width: 47%;
+    height: fit-content;
+    flex-grow: 0;
 }
 .flat-fee{
     display: flex;
@@ -1274,6 +1280,7 @@ tr{
 }
 .time-recovery{
     margin-top: 5%;
+    margin-left: 3%;
 }
 @media  screen and (min-width:768px) {
     .section-four-imgs{
@@ -1662,6 +1669,9 @@ tr{
         text-align: center;
        
     }
+    .hidden-small{
+        display: block;
+    }
     .buttons-div-section-one>a{
         width: 15%;
     }
@@ -1796,6 +1806,66 @@ tr{
 }
 .yellow-line{
     margin-top: 20%;
+}
+.custom-domain {
+    height: 10em;
+    width: 50%;
+    border: none;
+}
+.container-transform{
+    display: flex;
+    width: 50%;
+    border: var(--main-b);
+    border-radius: 8px;
+}
+.custom-domain-diagram{
+    display: flex;
+    width: 50%;
+    /* border: var(--try-b); */
+    overflow: hidden;
+    
+}
+.custom-domain-diagram-left0,.custom-domain-diagram-left1{
+    width: 99%;
+    height: 22%;
+    border: 1.4px solid white;
+    border-radius: 20px;
+    margin-left: -15%;
+    margin-top: 20%;
+}
+.custom-domain-diagram-left1{
+    margin-top: 2%;
+}
+.custom-domain-diagram-left0>p,.custom-domain-diagram-left1>p{
+    font-size: 16px;
+}
+
+.diagram-div0,.diagram-div1,.diagram-div2,.diagram-div3{
+    width: 40%;
+    height: 0.7em;
+    border: var(--main-b);
+    align-self: center;
+    border-bottom: none;
+    border-radius: 4px;
+}
+.diagram-div0{
+    margin-top: 23%;
+}
+.diagram-div1{
+    width: 45%;
+    height: 1em;
+    border: var(--try-b);
+    border-bottom: none;
+    background-color: grey;
+}
+.diagram-div2{
+    width: 50%;
+    height: 2em;
+}
+.diagram-div3{
+    width: 55%;
+    height: 3em;
+    
 }
 }
 
